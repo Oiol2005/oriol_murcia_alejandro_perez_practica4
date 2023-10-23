@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Oriol Murcia Arcas, Alejandro Perez Roca" content="width=device-width, initial-scale=1.0">
+    <title>Formulari</title>
+    <link rel="stylesheet" href="formulari.css">    <!--Enllaçem el css amb el html-->
+</head>
+<body>
+
+    <form action="formulari_enviat.html"> <!--Amb el form farem un formulari en el cual indicarem els labels i inputs--> <!--Amb el action els submit ens redirigeix al l'altre pagina-->
+        <h1>Suscripció Tot Futbol</h1>
+        <h3>Explica qui ets:</h3>
+        <label for="nom">Nom</label>
+        <input type="text" id="nom" name="nom" class="css3"><br><br>
+        <label for="correu">Correu electronic</label>
+        <input type="email" id="correu" name="correu" class="css3"><br><br> <!--Aqui tenim un breu formulari sobre informacio personal-->
+        <label for="edat">Edat</label>
+        <input type="number" id="edat" name="edat"><br>
+
+        <h3>A quina subscripció vols cambiar?</h3>
+        <input type="radio" id="basica" name="subscripcio">
+        <label for="basica">Basica</label> <br>
+        <input type="radio" id="premium" name="subscripcio">
+        <label for="premium">Premium</label> <br>             <!--Aquest es un formulari sobre el tipus de subscripcio que volem seleccionar-->
+        <input type="radio" id="extrapremium" name="subscripcio">
+        <label for="extrapremium">Extraptremium</label> <br><br>
+        <label for="quina_tens">Quina subscripció tens?</label>
+        <select>
+            <option value="basica">Basica</option>
+            <option value="premium">Premium</option>      <!--Amb el select fem una llista per indicar quina subsripcio tenim-->
+            <option value="extrapremium">Extraptremium</option>
+        </select>
+
+        <h3>Marca las tevas lligas preferida:</h3>
+        <input type="checkbox" id="laLiga" name="laLiga">
+        <label for="laLiga">LaLiga</label> <br>
+        <input type="checkbox" id="premier_league" name="premier_league">
+        <label for="premier_league">Premier League</label> <br>
+        <input type="checkbox" id="ligue_1" name="ligue_1">
+        <label for="ligue_1">Ligue 1</label> <br>
+        <input type="checkbox" id="bundesliga" name="bundesliga"> <!--Amb el checkbox farem recueadres i podrem seleccioanr mes d'un -->
+        <label for="bundesliga">Bundesliga</label> <br>
+        <input type="checkbox" id="seriea" name="seriea">
+        <label for="seriea">Serie A</label> <br><br>
+        <p>Hi ha alguna lliga que vulguis mes informació?</p><br>
+        <textarea  placeholder="Escriu el teu dubte..."  name="dubte"  rows="8" cols="70"></textarea><br><br>  <!--Aqui tenim un textarea per escriure algun dubte i un placeholder que ayuda a donar informacio de que posar-->
+        <input type="submit" value="Suscriu-me" class="boto">  <!--Boto per enviar el formulari i ens redirigeix a al formulari enviat-->
+        
+    </form>
+
+</body>
+</html>
